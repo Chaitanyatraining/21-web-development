@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Combinator selectors in CSS</title>
+		<style type="text/css">
+			/*Descendent Selector*/
+				div h2{
+					color: blue;
+					background-color: orange;
+					border: 1px solid red;
+				}
+
+			/*child Selector*/
+				div > p {
+					border: 2px solid green;
+					background-color: cyan;
+				}
+
+			/*adjacent siblings*/
+			h3 + article{
+				font-size: 25px;
+				color: firebrick;
+			}
+
+			/*general sibling selector*/
+
+			h4 ~ .generalsib{
+				padding-left: 30px;
+				background-color: blue;
+
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--  
+			Types of Combinator Selectors
+				- Descendent Selector(space)
+				- child Selector(>)
+				- Adjacent Sibling Selector(+)
+				- General Sibling Selector(~)
+		-->
+
+		<h2>Combinator selectors in CSS</h2>
+
+		<div>
+			<h2>This is Descendent Selector</h2>
+			<p>lorem2Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			<h2>This is second Descendent selector</h2>
+			<p>lorem2Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			<Section>
+				<h2>This is nested child</h2>
+				<p>lorem2Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</Section>
+
+		<!-- adjacent sibling selector -->
+			<h2> adjacent sibling selector</h2>
+			<h3>This is Article Heading</h3>
+			<article>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			</article>
+			<article>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			</article>
+
+			<!-- general sibling selector -->
+			<h4>general sibling selector</h4>
+			<section>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			</section>
+			<p>This is paragraph</p>
+			<section class="generalsib">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+			</section>
+		</div>
+	</body>
+</html>

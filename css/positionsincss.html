@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Positions in CSS</title>
+		<style>
+				body{
+					height: 1440px;
+				}
+
+			.parentposition{
+				border: 2px solid blue;
+				padding: 10px;
+			}
+
+			.relativeclass{
+				height: 100px;
+				width: 100px;
+				background-color: yellow;
+				position: relative;
+				/*top: 100px;
+				left: 100px;*/
+			}
+
+			.absoluteclass{
+				height: 100px;
+				width: 100px;
+				background-color: red;
+				margin: 10px;
+				/*position: absolute;*/
+				top: 100px;
+			}
+
+			.relclass{
+				margin-top: 10px;
+				border: 2px solid green;
+				/*position: relative;*/
+			}
+
+			.fixedclass{
+				position: fixed;
+				height: 150px;
+				width: 150px;
+				background-color: violet;
+			}
+
+			.stickyclass{
+				height: 100px;
+				width: 100px;
+				background-color: pink;
+				position: sticky;
+				top: 100px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- 
+			positions
+				- static
+				- relative
+				- absolute
+				- fixed
+				- sticky
+
+				top/bottom/left/right
+		 -->
+
+		<h2>positions in Css</h2>
+		<div class="parentposition">
+			<div class="relativeclass">relative</div>
+		</div>
+
+	<!-- absolute -->
+	<div class="relclass">
+		<section>
+			<div class="absoluteclass">
+				<h2>absolute</h2>
+			</div>
+		</section>
+	</div>
+
+	<div class="fixedclass">Fixed</div>
+
+	<div class="stickyclass">sticky</div>
+
+	</body>
+</html>

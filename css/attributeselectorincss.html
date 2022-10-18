@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Attribute selector to Css</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<style>
+			[class]{
+				border:2px solid brown;
+			}
+			
+			[alt="nature"]{
+				width:50%;
+				height:auto;
+			}
+			
+			[href ^= "./gene"]{
+				color:green;
+				background-color:blue;
+				font-size:25px;
+			}
+			
+			[alt ^= "nat"]{
+				border:2px solid red;
+			}
+			
+			[id $= "ipsum"]{
+				font-size:25px;
+				border:1px solid yellow;
+				margin:10px;
+			}
+			
+			[href *= "cto"]{
+				margin-left:100px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- 
+			types of attribute selector
+				- has attribute [hasattribute]
+				- attribute value equals to[alt="nature"]
+				- attribute value starts with[^]
+				- attribute value ends with[$]
+				- attribute value contains[*]
+		-->
+		
+		<h2 class="headattr">This is Attribute selector</h2>
+		<img src="../images/sample.jpg" alt="nature" />
+		<a href="./generalselectorsincss.html">Chick Here</a>
+		<section id="loremipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</section>
+		
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creating layout using float</title>
+		<style type="text/css">
+			.parentdiv{
+				border: 2px solid red;
+				padding: 20px;
+				float: left;
+				width: 100%;
+			}
+
+			.parentdiv  div{
+				height: 100px;
+				margin: 10px;
+			}
+
+			.div1{
+				background-color: red;
+				float: left;
+				width: 20%;
+			}
+
+			.div2{
+				background-color: yellow;
+				float: left;
+				width: 50%;
+			}
+			.div3{
+				background-color: green;
+				float: left;
+				width: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Creating layout using float</h2>
+		<div class="parentdiv">
+			<div class="div1">div1</div>
+			<div class="div2">div2</div>
+			<div class="div3">div3</div>
+		</div>
+	</body>
+</html>

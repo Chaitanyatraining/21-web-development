@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+         .image{
+            width: 32%;
+            height: auto;
+
+         }
+         .d-flex{
+            display: flex;
+         }
+
+         h2{
+            border:2px solid rebeccapurple;
+            height: 100px;
+         }
+
+         /* media queries */
+         /* mobile */
+         @media only screen and (max-width:768px){
+            h2{
+                background-color: red;
+            }
+
+            .image{
+                width: 100%;
+            }
+         }
+
+         /* tablet */
+         @media only screen and (min-width: 768px) and (max-width:992px) {
+            h2{
+                 background-color: orange;
+            }
+
+            .image{
+                width: 45%;
+            }
+         }
+    </style>
+</head>
+<body>
+    <h2>Media Queries in CSS</h2>
+    <di>
+            <img class="image" src="../images/img1.jpg" />
+       
+            <img class="image" src="../images/img2.jpg" />
+        
+            <img class="image" src="../images/img3.jpg" />
+    </div>
+</body>
+</html>
