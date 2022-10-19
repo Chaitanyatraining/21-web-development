@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div{
+            border:2px solid red;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        div:first-child:hover{
+            transform: translate(10px,20px);
+            background-color: aqua;
+        }
+
+        div:nth-child(2):hover{
+            background-color: coral;
+            transform: scale(1.0,1.5);
+        }
+
+        /* skew */
+        div:nth-child(3):hover{
+            background-color: darkgoldenrod;
+            transform: skew(2deg,10deg);
+        }
+
+        div:nth-child(4){
+            background-color: greenyellow;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        - transform
+            translate/scale/skew/rotate
+        - transition 
+        - animation
+     -->
+
+     <div>HTML</div>
+     <div>CSS</div>
+     <div>JAVASCRIPT</div>
+     <div>REACT</div>
+</body>
+</html>

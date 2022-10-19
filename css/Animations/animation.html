@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: darkmagenta;
+            border-radius: 50%;
+            line-height: 200px;
+            border: 5px solid green;
+            color:white;
+            text-align: center;
+
+            animation-name: rolling;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: all;
+            animation-duration: 4s;   
+        }
+
+        @keyframes rolling{
+            0%{
+                transform: rotate(0deg) skew(0deg,0deg);
+            }
+            100%{
+                transform: rotate(360deg) skew(360deg,360deg);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h2>Animation</h2> -->
+    <div>Animation</div>
+</body>
+</html>
